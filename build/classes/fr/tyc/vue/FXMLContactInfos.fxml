@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="411.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.tyc.vue.FXMLContactInfosController">
+   <children>
+      <SplitPane dividerPositions="0.2660753880266075" layoutX="-1.0" orientation="VERTICAL" prefHeight="476.0" prefWidth="577.0">
+        <items>
+          <AnchorPane fx:id="mainView" minHeight="0.0" minWidth="0.0" prefHeight="228.0" prefWidth="951.0">
+               <children>
+                  <Label layoutX="189.0" layoutY="4.0" text="Informations du propriétaire :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="42.0" layoutY="36.0" text="Nom :" />
+                  <Label fx:id="lastNameDetail" layoutX="85.0" layoutY="36.0" text="Label" visible="false" />
+                  <Label layoutX="230.0" layoutY="36.0" text="Prénom :" />
+                  <Label fx:id="firstNameDetail" layoutX="291.0" layoutY="36.0" text="Label" visible="false" />
+                  <Label layoutX="392.0" layoutY="36.0" text="Téléphone :" />
+                  <Label fx:id="phoneDetail" layoutX="460.0" layoutY="36.0" text="Label" visible="false" />
+                  <Label layoutX="142.0" layoutY="63.0" text="Adresse :" />
+                  <Label fx:id="adressDetail" layoutX="199.0" layoutY="63.0" text="Label" visible="false" />
+                  <Label layoutX="142.0" layoutY="92.0" text="Adresse mail :" />
+                  <Label fx:id="mailDetail" layoutX="227.0" layoutY="92.0" text="Label" visible="false" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="324.0" prefWidth="575.0">
+               <children>
+                  <GridPane fx:id="gridContactInfos" gridLinesVisible="true" layoutX="18.0" layoutY="26.0" prefHeight="290.0" prefWidth="540.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="492.0" minWidth="10.0" prefWidth="476.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="492.0" minWidth="10.0" prefWidth="476.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="492.0" minWidth="10.0" prefWidth="476.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="492.0" minWidth="10.0" prefWidth="476.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="492.0" minWidth="10.0" prefWidth="476.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="492.0" minWidth="10.0" prefWidth="476.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="492.0" minWidth="10.0" prefWidth="476.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="532.0" minWidth="10.0" prefWidth="477.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+                  <Button fx:id="buttonReturn" layoutX="262.0" layoutY="319.0" mnemonicParsing="false" onAction="#returnToSearchPage" text="Retour" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

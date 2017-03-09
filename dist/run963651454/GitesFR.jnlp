@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="GitesFR.jnlp">
+  <information>
+    <title>GitesFR</title>
+    <vendor>59013-52-14</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="GitesFR.jar" size="44051" download="eager" />
+    <jar href="lib\Outils.jar" size="15217" download="eager" />
+    <jar href="lib\controlsfx-8.40.12.jar" size="996389" download="eager" />
+    <jar href="lib\sqljdbc42.jar" size="891084" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="GitesFR" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="fr.tyc.vue.FilRouge"  name="GitesFR" />
+  <update check="always"/>
+</jnlp>
