@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.ListSelectionView?>
+
+<AnchorPane id="AnchorPane" prefHeight="508.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.tyc.vue.FXMLAddpageController">
+   <children>
+      <Label layoutX="314.0" layoutY="14.0" text="Ajouter un Gite :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="RIGHT" layoutX="29.0" layoutY="55.0" prefHeight="25.0" prefWidth="230.0" text="Nom :">
+         <graphic>
+            <TextField prefHeight="25.0" prefWidth="193.0" />
+         </graphic>
+      </Label>
+      <Label contentDisplay="RIGHT" layoutX="464.0" layoutY="55.0" text="Id Propiétaire :">
+         <graphic>
+            <TextField />
+         </graphic>
+      </Label>
+      <Label contentDisplay="RIGHT" layoutX="29.0" layoutY="100.0" prefHeight="25.0" prefWidth="230.0" text="Adresse :">
+         <graphic>
+            <TextField prefHeight="25.0" prefWidth="177.0" />
+         </graphic>
+      </Label>
+      <Label contentDisplay="RIGHT" layoutX="29.0" layoutY="145.0" prefHeight="25.0" prefWidth="230.0" text="Code Postal :">
+         <graphic>
+            <TextField prefHeight="25.0" prefWidth="157.0" />
+         </graphic>
+      </Label>
+      <Label contentDisplay="RIGHT" layoutX="464.0" layoutY="145.0" prefHeight="25.0" prefWidth="230.0" text="Ville :">
+         <graphic>
+            <TextField prefHeight="25.0" prefWidth="196.0" />
+         </graphic>
+      </Label>
+      <Label contentDisplay="RIGHT" layoutX="29.0" layoutY="190.0" prefHeight="25.0" prefWidth="230.0" text="Chambres :">
+         <graphic>
+            <TextField prefHeight="25.0" prefWidth="165.0" />
+         </graphic>
+      </Label>
+      <Label contentDisplay="RIGHT" layoutX="464.0" layoutY="190.0" prefHeight="25.0" prefWidth="230.0" text="Couchages :">
+         <graphic>
+            <TextField prefHeight="25.0" prefWidth="160.0" />
+         </graphic>
+      </Label>
+      <Label contentDisplay="RIGHT" layoutX="29.0" layoutY="235.0" prefHeight="25.0" prefWidth="230.0" text="Tarif animaux :">
+         <graphic>
+            <TextField />
+         </graphic>
+      </Label>
+      <Label contentDisplay="RIGHT" layoutX="464.0" layoutY="235.0" prefHeight="25.0" prefWidth="230.0" text="Surface :">
+         <graphic>
+            <TextField prefHeight="25.0" prefWidth="181.0" />
+         </graphic>
+      </Label>
+      <ListSelectionView layoutX="101.0" layoutY="280.0" prefHeight="174.0" prefWidth="554.0" />
+      <Button fx:id="buttonAdd" layoutX="573.0" layoutY="469.0" mnemonicParsing="false" text="Ajouter" />
+      <Button fx:id="buttonCancel" layoutX="665.0" layoutY="469.0" mnemonicParsing="false" onAction="#returnToSearchPage" text="Annuler" />
+   </children>
+</AnchorPane>
