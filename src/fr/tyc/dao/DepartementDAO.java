@@ -20,6 +20,7 @@ import outils.Outils;
 public class DepartementDAO {
     private Connect connection;
     private ResultSet rs;
+    private int mabite;
     
     
     
